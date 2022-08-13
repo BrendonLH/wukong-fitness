@@ -11,9 +11,9 @@
 ### WireFrame
 ![image]('')
 ### Domain Model
-![image]('')
+![image](assets/wukong-fitness-domain-model.png)
 ### Products Model
-![image]('')
+![image](assets/wukong-fitness-product-wheel.png)
 
 </details>
 
