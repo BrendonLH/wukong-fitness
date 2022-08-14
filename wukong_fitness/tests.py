@@ -1,7 +1,7 @@
 from django.contrib.auth import get_user_model
 from django.test import TestCase
 from django.urls import reverse
-from wukong_fitness.models import Equipment
+from wukong_fitness.models import Equipment, Coaches
 
 
 class EquipmentTests(TestCase):
@@ -21,5 +21,10 @@ class EquipmentTests(TestCase):
     def test_equipment_price_is_not(self):
         self.assertIsNot(self.equipment.price, 10.99)
 
+
 class CoachesTests(TestCase):
-    pass
+    def setUp(self):
+        self.coach = Coaches.objects.create(First='Ellie', Last='Hampton', Age=11)
+
+    def test_coach_name(self):
+        self.assertEqual(f'{self.coach.First}', 'Ellie')
