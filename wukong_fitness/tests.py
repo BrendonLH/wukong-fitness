@@ -21,3 +21,5 @@ class EquipmentTests(TestCase):
     def test_equipment_price_is_not(self):
         self.assertIsNot(self.equipment.price, 10.99)
 
+class CoachesTests(TestCase):
+    pass
