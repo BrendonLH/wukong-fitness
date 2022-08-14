@@ -9,3 +9,12 @@ class Equipment(models.Model):
 
     def __str__(self):
         return f"Name: {self.name}"
+
+class Coaches(models.Model):
+    First = models.CharField(max_length=20)
+    Last = models.CharField(max_length=50, default=" ")
+    Age = models.IntegerField(default=0)
+    Email = models.EmailField(max_length=200, default=" ", blank=True)
+
+    def __str__(self):
+        return f"FirstName: {self.First}, LastName: {self.Last}, Age: {self.Age}"

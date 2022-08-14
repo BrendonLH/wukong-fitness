@@ -1,5 +1,7 @@
 from django.contrib import admin
 
-from .models import Equipment
+from .models import Equipment, Coaches
 
-admin.site.register(Equipment)
+my_models = [Equipment, Coaches]
+admin.site.register(my_models)
+
