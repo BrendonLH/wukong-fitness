@@ -10,7 +10,7 @@ class Equipment(models.Model):
     def __str__(self):
         return f"Name: {self.name}"
 
-class Coaches(models.Model):
+class Coach(models.Model):
     First = models.CharField(max_length=20)
     Last = models.CharField(max_length=50, default=" ")
     Age = models.IntegerField(default=0)
